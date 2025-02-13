@@ -3,8 +3,22 @@
   "version": "1.0.0",
   "description": "AI package manager",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "dev": "ts-node bin/cli.ts"
   },
   "author": "John Doe",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^13.1.0",
+    "prettier": "^3.5.0",
+    "typescript": "^5.7.3"
+  },
+  "bin": {
+    "aipkg": "./dist/cli.js"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.1",
+    "ts-node": "^10.9.2"
+  }
 }
